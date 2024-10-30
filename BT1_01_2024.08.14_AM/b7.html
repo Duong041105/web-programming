@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>doan van 1</p>
+    <p>doan van 2</p>
+    <p>doan van 3</p>
+
+    <button onclick="Updatedparagraph()">Thay doi noi dung</button>
+    <script>
+        function Updatedparagraph() {
+            var paragraph = document.getElementsByTagName("p");
+            
+            for(var i=0; i<paragraph.length; i++) {
+                paragraph[i].innerHTML="Updated paragraph"
+            }
+
+        }
+    </script>
+</body>
+</html>

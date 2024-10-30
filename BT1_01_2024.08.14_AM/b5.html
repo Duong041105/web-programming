@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi thuộc tính</title>
+</head>
+<body>
+
+    <img id="myimage" scr="https://i.pinimg.com/564x/12/36/d5/1236d5668a09545b29e95a3f69d155e1.jpg" alt="hinh anh ban dau" width="400">
+    <button onclick="changeimage()">thay doi hinh anh</button>
+    <script>
+        function changeimage() {
+            var img = document.getElementById("myimage");
+            img.scr = "https://i.pinimg.com/736x/96/92/6c/96926c56570a43f2ac65ec4866c650af.jpg";
+            img.alt = "hinh anh da thay doi";
+            img.width = 500;
+
+        }
+    </script>
+
+</body>
+</html>

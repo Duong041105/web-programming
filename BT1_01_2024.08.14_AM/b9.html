@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dem so luong phan tu trong DOM</title>
+</head>
+<body>
+    <h1>TIEU DE</h1>
+    <p>Doan van 1</p>
+    <p>Doan van 2</p>
+    <div id="content">
+        <p>doan van trong the div</p>
+    </div>
+    <script>
+        var allelements = document.getElementsByTagName('*');
+        var numberofelements = allelements.length;
+        alert('so luong phan tu trong DOM la:'+ numberofelements);
+    </script>
+    
+</body>
+</html>

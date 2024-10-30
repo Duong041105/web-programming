@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về nhà</title>
+</head>
+
+
+<body>
+    <p id="title"> Nội dung cũ </p>
+    <script>
+        var title = document.getElementById('title').innerHTML='học lập trình không đơn giản'
+        
+    </script>
+    <p id="text">học lập trình không đơn giản</p>
+    <script>
+        document.getElementById("text").style.color = "red";
+    </script>
+    <ul id="list">
+        <li>Phần tử 1</li>
+        <li>phần tử 2</li>
+    </ul>
+    <script>
+        var newlistItem = document.createElement(li);
+        NewlistItem.innerHTML = "phần tử mới";
+        document.getElementById("list").appendChild("newlistitem");
+    </script>
+    <div id="parent">
+        <p id="remove-me">phan tu nay se bi xoa khoi DOM</p>
+    </div>
+    <button onclick="removeElement()">xoa phan tu</button>
+    <script>
+        function removeElement() {
+            var parent = document.getElementById("parent");
+            var element = document.getElementById("remove-me");
+            parent.removeChild(element);
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
